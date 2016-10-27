@@ -4,6 +4,7 @@ package cat.iesjoaquimmir.geoapp.views.model.businesslayer.entities;
 public class Square {
     //<editor-fold defaultstate="collapsed" desc="Estat:atributs">
          private double lado;
+         public static final double costatQ=1.0;
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="Comportament:mètodes">
          //<editor-fold defaultstate="collapsed" desc="getters/setters">
@@ -21,6 +22,10 @@ public class Square {
          //<editor-fold defaultstate="collapsed" desc="Constructores">
             public Square(double lado){
                 this.setLado(lado);
+            }
+            //Sobrecaàrrega del constructor Square
+            public Square(){
+                this(costatQ);
             }
          //</editor-fold>
          //<editor-fold defaultstate="collapsed" desc="Operaciones de Objeto">

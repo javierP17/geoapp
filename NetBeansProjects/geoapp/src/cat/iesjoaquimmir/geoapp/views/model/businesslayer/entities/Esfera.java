@@ -5,6 +5,7 @@ package cat.iesjoaquimmir.geoapp.views.model.businesslayer.entities;
 public class Esfera {
     //<editor-fold defaultstate="collapsed" desc="Estat:atributs">
          private double radi;
+         public static final double esfera1=1.0;
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="Comportament:mètodes">
          //<editor-fold defaultstate="collapsed" desc="getters/setters">
@@ -22,6 +23,9 @@ public class Esfera {
          //<editor-fold defaultstate="collapsed" desc="Constructores">
             public Esfera(double radi){
                 this.setRadi(radi);
+            }
+            public Esfera(){
+                this(esfera1);
             }
          //</editor-fold>
          //<editor-fold defaultstate="collapsed" desc="Operaciones de Objeto">
